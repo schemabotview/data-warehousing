@@ -6,5 +6,6 @@
   "dimensions": "Dimension Tables",
   "schemas": "Star & Snowflake Schemas",
   "history": "Slowly Changing Dimensions",
-  "datavault": "Data Vault Modeling"
+  "datavault": "Data Vault Modeling",
+  "design": "Designing a Data Warehouse Model"
 }
