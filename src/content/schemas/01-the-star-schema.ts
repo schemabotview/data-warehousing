@@ -1,0 +1,28 @@
+import type { Section } from '../types'
+
+export const theStarSchema: Section = {
+  id: 'the-star-schema',
+  title: 'The star schema',
+  scene: 'star-shape',
+  slide: `## The star schema
+
+One fact in the middle, a ring of dimensions around it, and every dimension exactly **one join** away. That is the whole shape.
+
+### One fact, a ring of dimensions
+
+- Each dimension joins **directly** to the fact — one hop
+
+### Why this shape
+
+- **Fast** — every dimension is **one join** away, no chains
+- **Simple** — anyone reads it; BI tools generate the SQL
+- **Uniform** — join, filter, group, aggregate — every query alike
+
+### The trade it accepts
+
+- Flat dimensions **repeat data** → more storage
+- Safe here: ETL controls writes, not constant user updates
+`,
+  narration:
+    "The star schema. Modules three and four built the two pieces — the fact and the dimension. This module arranges them into the signature shape of the data warehouse: the star schema. A star schema is one central fact table surrounded by dimension tables, each joined directly to the fact. Draw it, and you see why it's named a star: the fact sits at the centre, and the dimensions radiate out like points. FACT SALES in the middle; dim date, dim customer, dim product, dim channel, dim promotion around it. So why this shape? Recall module two: OLTP systems normalize — they shatter data into many small tables to make writes safe. Analytics wants the opposite. A star deliberately keeps only two layers — a fact, and a single ring of flat, denormalized dimensions. And that buys three things. Queries are fast, because every dimension is just one join from the fact; there are no chains of joins to walk. The model is simple — anyone can look at a star and understand it, and BI tools generate the SQL automatically. And the pattern is uniform: join the fact to the dimensions you need, filter and group by their attributes, aggregate the measures. Every question, the same shape. Now, the trade it accepts. Flat dimensions repeat data — the same region on every customer row, the same product line on every product row. That redundancy costs storage, and in an OLTP system it would risk update anomalies. But the warehouse accepts it gladly: dimensions are loaded by controlled ETL, not by constant user writes, and storage is cheap next to the value of fast, simple analysis. So the star is the default warehouse schema: a fact at the centre, flat dimensions one hop away. The rest of this module dissects it, contrasts it with the snowflake, scales it up to a galaxy, and walks through a real physical build.",
+}

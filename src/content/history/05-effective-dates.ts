@@ -1,0 +1,31 @@
+import type { Section } from '../types'
+
+export const effectiveDates: Section = {
+  id: 'effective-dates',
+  title: 'Effective dates & the active flag',
+  scene: 'control-columns',
+  slide: `## Effective dates & the active flag
+
+Three columns turn a pile of versions into a **timeline** — contiguous, with exactly one live row and no gaps.
+
+### Three control columns
+
+- **\`effective_date\`** — the day this version became current
+- **\`expiry_date\`** — the day it stopped
+- **\`is_current\`** — \`Y\`/\`N\`, marks the one live row
+
+- A contiguous timeline — no gaps, no overlaps
+
+### The high-date trick
+
+- Current row's expiry = **\`9999-12-31\`**, not NULL → one \`BETWEEN\` fits all
+
+### How you query it
+
+- **Current** — \`WHERE is_current = 'Y'\`
+- **As of date D** — \`WHERE D BETWEEN effective_date AND expiry_date\`
+- ETL invariant: exactly **one** current row · a **continuous** timeline
+`,
+  narration:
+    'Effective dates and the active flag. Type 2 keeps many versions of a row — so each version needs to say when it was valid, and which one is live now. Three control columns do that job. They\'re the machinery that makes full history actually usable. The three columns are these. Effective date — the valid-from — is the day this version became current. Expiry date — the valid-to — is the day this version stopped being current. And is-current — the active flag — is a Y-or-N boolean marking the one live row. So for Ana: her Madrid row runs effective from June twenty twenty-one, expiring the thirty-first of March twenty twenty-six, is-current N. Her Barcelona row runs from the first of April twenty twenty-six, expiry the high date, is-current Y. Notice the versions form a contiguous timeline — one ends the day before the next begins — with no gaps and no overlaps. Now, the high-date trick. The current row\'s expiry date is set to a high date — nine-nine-nine-nine, the thirty-first of December — not left null. It means "still valid, indefinitely." And using a real far-future date instead of null lets a single BETWEEN test work for every row, without special-casing nulls. So how do you query it? Two ways. For the current view — the latest version of everyone — you filter where is-current equals Y. The active flag is a shortcut, so you don\'t have to do date math for the common case. And for a point-in-time view — the version valid "as of" some day D — you filter where D is between the effective date and the expiry date. That\'s how a fact links to the right version. Finally, two consistency rules the ETL must always hold. First, exactly one current row per natural key — one row with is-current Y. And second, the timeline is continuous: each new version\'s effective date picks up exactly where the prior expiry date left off. So those three columns turn a pile of versioned rows into a queryable timeline: the flag finds "now" fast, the date range answers "as of then", and the high date keeps the current row open without any nulls.',
+}
