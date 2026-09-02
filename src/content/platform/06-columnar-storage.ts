@@ -1,0 +1,29 @@
+import type { Section } from '../types'
+
+export const columnarStorage: Section = {
+  id: 'columnar-storage',
+  title: 'Columnar storage & compression',
+  scene: 'columnar',
+  slide: `## Columnar storage & compression
+
+Store whole rows together, or whole columns together. That single layout choice is why an analytical scan can read one column and skip twenty.
+
+### Row vs column layout
+
+- Row = fetch one whole row (OLTP) · Columnar = few columns, many rows (OLAP)
+
+### Why it's fast
+
+- **Read only needed columns** — \`SUM(line_total)\` skips 20 others (why \`SELECT *\` is a sin)
+- **Compression** — one type, low variety → run-length / dictionary → less **I/O**
+- **Vectorised** — process compressed column blocks in bulk
+
+### It replaces the index
+
+- Reading one compressed column across MPP nodes is already cheap
+- **Data skipping** (zone maps, §07) does the index's old job
+- "Add an index" → "**store columnar & cluster well**"
+`,
+  narration:
+    'Columnar storage and compression. If one thing explains why analytic queries fly on these platforms, it\'s columnar storage. It\'s the physical layout that matches the analytic workload — and it quietly retires the B-tree index. Consider row versus column layout. Row storage, used in OLTP, keeps each row\'s columns together — which is ideal for fetching one whole row, the transactional pattern. Columnar storage keeps each column together — which is ideal for analytics, which read a few columns across many rows. So where a row store keeps row one, then row two, each with all its fields, a columnar store keeps all the i-ds together, then all the names together, then all the cities, then all the amounts. Why is that fast for analytics? Three reasons. First, you read only the columns you need. Sum of line total reads just the line-total column, and skips the twenty others — a fraction of the input-output. And this is exactly why select-star is a warehouse sin: it drags every column off disk. Second, compression. A column holds values of one type, with low variety, so it compresses extremely well — run-length, dictionary, delta encoding. That means less storage, and less data to read — which means less I/O, the real bottleneck. And third, vectorised execution — the engine processes compressed column blocks in bulk, many values per CPU instruction. And here\'s the big consequence: columnar storage replaces the index. Row stores lean on B-tree indexes to avoid full scans. Columnar warehouses don\'t need to: reading one column of a billion rows, compressed and split across MPP nodes, is already cheap — and data skipping, using zone maps, which is the next section, handles the "find the matching rows" job that an index used to do. So the module-one idea of "add an index" becomes, in this world, "store columnar, and cluster well." So: columnar storage keeps each column together, so a query reads only the columns it needs, compresses them hard, and scans them vectorised across MPP nodes. That\'s a massive I/O saving — and it\'s the reason indexes give way to columnar plus data-skipping.',
+}

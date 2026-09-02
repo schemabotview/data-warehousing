@@ -7,6 +7,7 @@ import { history } from './history'
 import { datavault } from './datavault'
 import { design } from './design'
 import { loading } from './loading'
+import { platform } from './platform'
 import type { Course, Section } from './types'
 
 // The course catalog, in syllabus order. → past a course's last section rolls into the next course's
@@ -25,6 +26,7 @@ export const COURSES: Record<string, Course> = {
   [datavault.id]: datavault,
   [design.id]: design,
   [loading.id]: loading,
+  [platform.id]: platform,
 }
 
 export type { Course, Section }

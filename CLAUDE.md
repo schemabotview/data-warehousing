@@ -6,7 +6,7 @@ Data-Warehousing-specific.
 
 ## Status
 
-**ALL 6 COURSES BUILT + PUBLISHED 2026-09-02** — 60 sections · 60 scenes · 60 wavs (98.5 min, 271 MB).
+**ALL 10 COURSES BUILT 2026-09-02** — 100 sections · 100 scenes · 100 wavs (171.1 min).
 `npm run build`, `tsc --noEmit` and `npm run check` are clean; `scripts/audio-manifest.json` is
 regenerated (60/60 have a wav). Slides model 767–1096 px against the 1100 ceiling (median 913).
 
@@ -31,7 +31,7 @@ A standalone concept app: its own scenes + courses + a bundled render-engine (`s
 Each **section** = `(scene, slide, narration)`; the left scene is a react-flow diagram or a code
 snippet, the right slide is markdown. One section = one slide = one video segment.
 
-## Course arc — a PREFIX of a ten-module spine (this is a hard constraint)
+## Course arc — the complete ten-module spine
 
 | # | id | Title | Secs | Audio |
 |--:|----|-------|-----:|-------|
@@ -41,9 +41,17 @@ snippet, the right slide is markdown. One section = one slide = one video segmen
 | 4 | `dimensions` | Dimension Tables | 10 | 16.4 |
 | 5 | `schemas` | Star & Snowflake Schemas | 10 | 17.5 |
 | 6 | `history` | Slowly Changing Dimensions | 10 | 18.3 |
+| 7 | `datavault` | Data Vault Modeling | 10 | 18.2 |
+| 8 | `design` | Designing a Warehouse Model | 10 | 17.4 |
+| 9 | `loading` | Loading the Warehouse — ETL & ELT | 10 | 18.2 |
+| 10 | `platform` | Cloud Data Warehouses & MPP | 10 | 18.8 |
 
-60 sections, 98.5 min. Appended later, **in this order**: `datavault` (07) · `design` (08, the
-capstone) · `loading` (09, ETL/ELT) · `platform` (10, cloud & MPP).
+100 sections, 171.1 min. **`design` (08) is NOT the project** — it closes the MODELING block
+(modules 3-8) and 10-10's narration says so out loud ("model a clean star, in modules three through
+eight; load it reliably, in module nine; run it on cloud MPP in module ten"). The concept's finale is
+`platform`, which ends on a before/after case study and that full-arc recap. There is no hands-on
+end-to-end build project of the kind `linux/project` or `sql/capstone` ships; adding one would be a
+new **module 11**, authored from scratch — nothing references module 11, so it disturbs no numbering.
 
 **Why the order is not negotiable.** The narration ported from `~/Workspace/data-warehousing-ct` is
 already generated — frozen — and it cross-references its neighbours **by module number**: 61 spoken

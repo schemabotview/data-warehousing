@@ -1,0 +1,30 @@
+import type { Section } from '../types'
+
+export const mppArchitecture: Section = {
+  id: 'mpp-architecture',
+  title: 'MPP architecture — shared-nothing parallelism',
+  scene: 'mpp',
+  slide: `## MPP architecture — shared-nothing parallelism
+
+Many nodes, each owning a slice and its own CPU, memory and disk. A billion rows across a hundred nodes is **ten million each**.
+
+### Many nodes, in parallel — not one big machine
+
+### Shared-nothing
+
+- Each node owns a **data slice** + its **own** CPU, memory, disk
+- No shared bottleneck → add nodes ≈ **linear** capacity
+
+### How a query runs
+
+- **Leader** plans & splits into fragments · **compute nodes** run their slice
+- Billion rows / 100 nodes → each scans 10M → **~100× speedup**
+
+### Fits analytics, not OLTP
+
+- Analytics = **scan + aggregate** huge sets → parallelism wins
+- **Scale out** (add nodes), not scale up (bigger box)
+`,
+  narration:
+    "MPP architecture — shared-nothing parallelism. The engine under every cloud warehouse is MPP — massively parallel processing. Instead of one big machine chewing through a query row by row, MPP spreads the work across many nodes running in parallel. The classic MPP design is called shared-nothing. Each compute node owns a slice of the data, and has its own CPU, its own memory, and its own disk. The nodes don't contend for a shared resource, so there's no central bottleneck — which means you can add nodes and add capacity almost linearly. Picture a query fanning out to node one, node two, node three, each holding a slice of FACT SALES, each doing its part, and the results combined at the end. So how does a query actually run? A leader, or coordinator, node plans the query and splits it into fragments. Each compute node runs its fragment against its own slice. And the partial results are combined into the final answer. Scanning and aggregating a fact table is what's called embarrassingly parallel — split a billion-row fact across a hundred nodes, and each one scans ten million rows at once. That's a near-hundred-fold speedup. Why does this fit analytics, but not OLTP? Because analytics means scanning and aggregating huge row sets — so parallelism wins big. Whereas OLTP means fetching or updating single rows — where a single node is fine, and MPP's coordination overhead wouldn't pay off. This is exactly the workload split from module one — OLTP versus OLAP — now realised in hardware. And it's why, in this world, you go faster by scaling out — adding nodes — rather than the old world's scaling up, buying a bigger box. So: MPP runs a query across many shared-nothing nodes, each owning a data slice with its own CPU, memory, and disk. Scanning a huge fact is embarrassingly parallel — this is the engine that makes star joins over billions of rows fast.",
+}

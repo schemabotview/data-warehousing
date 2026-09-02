@@ -4,14 +4,15 @@ The **Data Warehousing** concept app for [GraphL](https://graphl.in). One sectio
 (react-flow diagram or code snippet) + a right **slide** (markdown) + a **narration** script,
 rendered responsively (4K capture · laptop web app · mobile) and captured to video.
 
-> **Status: published, 2026-09-02.** All 6 courses — **60 sections, 60 scenes, 60 narration wavs
-> (98.5 min)** — live at **[graphl.in/data-warehousing](https://graphl.in/data-warehousing/)**.
-> `npm run build`, `tsc --noEmit` and `npm run check` are clean. Recorded — 101.8 min of 4K masters.
+> **Status: published, 2026-09-02.** All 10 courses — **100 sections, 100 scenes, 100 narration wavs
+> (171.1 min)** — live at **[graphl.in/data-warehousing](https://graphl.in/data-warehousing/)**.
+> `npm run build`, `tsc --noEmit` and `npm run check` are clean. Courses 1-6 are recorded (101.8 min
+> of 4K masters); 7-10 are built and not yet captured.
 
 Workspace-wide model, pipeline, and conventions: see the workspace [`README.md`](../README.md).
 Authoring rules specific to this concept: [`CLAUDE.md`](./CLAUDE.md).
 
-## The course arc (6 courses, 60 sections)
+## The course arc (10 courses, 100 sections)
 
 | # | Course | What it covers |
 |--:|--------|----------------|
@@ -21,18 +22,20 @@ Authoring rules specific to this concept: [`CLAUDE.md`](./CLAUDE.md).
 | 4 | **dimensions** | Attributes & hierarchies, surrogate keys, conformed & role-playing & junk dims, the date dimension. |
 | 5 | **schemas** | The star, the snowflake, the galaxy — and a physical Sales-star walkthrough. |
 | 6 | **history** | Slowly changing dimensions — types 0, 1, 2, 3, 4 and 6, and the SCD-2 merge. |
+| 7 | **datavault** | Hubs, links and satellites; hash keys; and the mapping back to a star mart. |
+| 8 | **design** | Kimball's four steps, worked end to end from a real bill — the close of the modeling block. |
+| 9 | **loading** | ETL vs ELT, staging, CDC, the surrogate-key lookup, and idempotent restartable loads. |
+| 10 | **platform** | Cloud MPP, columnar storage, distribution, pruning, caching — and how to query it well. |
 
 Ten sections each. Narration for every one is **already generated** (Colab + Chatterbox, ported from
 `~/Workspace/data-warehousing-ct`) and lives at `public/audio/<course>/<section-id>.wav`, so a
 `Section.narration` is **frozen** — editing it desynchronises the audio.
 
-## This arc is a prefix, and its order is fixed
+## The course order is fixed
 
-The six courses are modules 1–6 of a ten-module spine. Four more get **appended in order** —
-`datavault` (7) · `design` (8, the capstone) · `loading` (9, ETL/ELT) · `platform` (10, cloud & MPP) —
-because the frozen narration cross-references its neighbours **by module number** ("recall module
-two", "that's module six", "module nine's restartable loads"). Course N must stay module N. See
-[`CLAUDE.md`](./CLAUDE.md) for the full constraint.
+The frozen narration cross-references its neighbours **by module number** — 61 times across the 100
+sections ("recall module two", "that's module six", "module nine's restartable loads"). Course N must
+stay module N; never renumber or reorder. See [`CLAUDE.md`](./CLAUDE.md) for the full constraint.
 
 ## Layout
 

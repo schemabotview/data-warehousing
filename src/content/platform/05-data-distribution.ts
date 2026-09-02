@@ -1,0 +1,27 @@
+import type { Section } from '../types'
+
+export const dataDistribution: Section = {
+  id: 'data-distribution',
+  title: 'Data distribution — distribution & partition keys',
+  scene: 'distribution',
+  slide: `## Data distribution
+
+Two different questions that beginners fuse: **which node** does a row live on, and **which segment** is it stored in?
+
+### Distribution key — **which node**
+
+- The column that assigns each row to a node (by hash)
+- **Even spread, no skew** — high-cardinality → nodes balanced
+- **Co-located joins** — fact + big dim on same key → **local** join, no **shuffle**
+  - e.g. \`FACT_SALES\` + \`DIM_PRODUCT\` on \`product_key\`
+- Small dims → **broadcast** (replicated to every node)
+
+### Partition key — **which segment**
+
+- Splits a table into segments by a column (often **date**)
+- Filter on it → read only relevant partitions (**pruning**, §09)
+- \`FACT_SALES\` by \`order_date\` → "2026" reads one year, not ten
+`,
+  narration:
+    'Data distribution — distribution and partition keys. On an MPP warehouse, how the fact\'s rows are spread across the nodes decides how fast a query runs. And two levers control it: the distribution key — which node a row lives on — and the partition key — which segment within a node. They\'re different axes, and both matter. Start with the distribution key — which node. It\'s the column used to assign each row to a compute node, usually by hashing it. And you choose it for two goals. First, even spread, no skew: pick a high-cardinality, evenly-distributed column, so every node gets a roughly equal share. A skewed key overloads one node, and the whole query waits on it. Second, co-located joins: if a fact and a big dimension are distributed on the same key, their matching rows land on the same node — so the join runs locally, with no network shuffle. Distribute FACT SALES and a large dim product both on product key, and their join stays node-local. Small dimensions, by the way, don\'t need co-location — they\'re broadcast, replicated to every node, so any fact row can join them locally. Now the partition key — which segment. It splits a table into segments by a column — very often the date. A query filtered on that column then reads only the relevant partitions, and skips the rest — that\'s partition pruning, section nine. So partitioning FACT SALES by order date means "sales in twenty twenty-six" touches one year\'s partitions, not ten. So, two axes, one goal. Distribution is which node a row is on — you set it to balance the work and localise joins. Partition is which segment — you set it to scan less, by pruning. Redshift and Synapse make distribution explicit, with a DISTKEY; Snowflake and BigQuery automate distribution but let you choose partition and cluster columns. And get these wrong — a skewed distribution, or no partitioning — and even MPP crawls, under shuffles and full scans. So: the distribution key decides which node a row lives on — balance it, and align the fact and big-dimension keys for local joins; the partition key splits a table into segments, usually by date, so filters prune to just the relevant ones.',
+}
