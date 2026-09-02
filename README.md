@@ -6,7 +6,7 @@ rendered responsively (4K capture · laptop web app · mobile) and captured to v
 
 > **Status: published, 2026-09-02.** All 6 courses — **60 sections, 60 scenes, 60 narration wavs
 > (98.5 min)** — live at **[graphl.in/data-warehousing](https://graphl.in/data-warehousing/)**.
-> `npm run build`, `tsc --noEmit` and `npm run check` are clean. Not yet recorded.
+> `npm run build`, `tsc --noEmit` and `npm run check` are clean. Recorded — 101.8 min of 4K masters.
 
 Workspace-wide model, pipeline, and conventions: see the workspace [`README.md`](../README.md).
 Authoring rules specific to this concept: [`CLAUDE.md`](./CLAUDE.md).

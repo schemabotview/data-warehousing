@@ -13,7 +13,11 @@ regenerated (60/60 have a wav). Slides model 767–1096 px against the 1100 ceil
 Live at **https://graphl.in/data-warehousing/** — pushed to `schemabotview/data-warehousing` and
 deployed by `deploy.yml` (Pages build source = the workflow; the apex domain is inherited from
 `schemabotview.github.io`'s CNAME, so no CNAME file here). Listed in the catalog's `concepts.json`.
-NOT recorded — that is the next downstream step.
+
+**RECORDED 2026-09-02** — all six courses captured at 3840×2160 to `scripts/out/<course>.mp4`:
+101.8 min, 452 MB, h264/aac, 10 segments each. `scripts/out/` and `scripts/segments/` are gitignored,
+so the masters live only on this machine — back them up before cleaning. Remaining: thumbs (`npm run
+thumb`), descriptions (`npm run gen:desc`), upload.
 
 ## What this is
 
