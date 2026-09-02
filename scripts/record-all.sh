@@ -4,7 +4,7 @@
 #   caffeinate -dimsu bash scripts/record-all.sh
 #
 # Runs its OWN dedicated dev server on RECORD_PORT (default 5183, --strictPort so it never
-# silently lands on a neighbour's port) and hands it to every course via APP_URL, so the eight
+# silently lands on a neighbour's port) and hands it to every course via APP_URL, so the six
 # record-course runs share one Vite process instead of spawning and killing one per course. The server is
 # torn down on exit (including Ctrl-C) by the trap.
 #
@@ -16,7 +16,7 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 
 PORT="${RECORD_PORT:-5183}"
-COURSES=(kernel shell filesystem processes text admin scripting project)
+COURSES=(foundations keys facts dimensions schemas history)
 LOG_DIR="scripts/out"
 mkdir -p "$LOG_DIR"
 
