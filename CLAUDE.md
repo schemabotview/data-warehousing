@@ -6,10 +6,14 @@ Data-Warehousing-specific.
 
 ## Status
 
-**ALL 6 COURSES BUILT 2026-09-02** — 60 sections · 60 scenes · 60 wavs (98.5 min, 271 MB).
+**ALL 6 COURSES BUILT + PUBLISHED 2026-09-02** — 60 sections · 60 scenes · 60 wavs (98.5 min, 271 MB).
 `npm run build`, `tsc --noEmit` and `npm run check` are clean; `scripts/audio-manifest.json` is
 regenerated (60/60 have a wav). Slides model 767–1096 px against the 1100 ceiling (median 913).
-NOT recorded, NOT git-init'd, NOT pushed.
+
+Live at **https://graphl.in/data-warehousing/** — pushed to `schemabotview/data-warehousing` and
+deployed by `deploy.yml` (Pages build source = the workflow; the apex domain is inherited from
+`schemabotview.github.io`'s CNAME, so no CNAME file here). Listed in the catalog's `concepts.json`.
+NOT recorded — that is the next downstream step.
 
 ## What this is
 
