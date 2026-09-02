@@ -1,0 +1,33 @@
+import type { Section } from '../types'
+
+export const extract: Section = {
+  id: 'extract',
+  title: 'Extract — pulling from source systems',
+  scene: 'extract',
+  slide: `## Extract — pulling from source systems
+
+Every source is **live** and belongs to someone else. Take a faithful read-only copy without hurting the system the business is running on.
+
+### Pull from where the business runs
+
+- Jabra sources: **web store · POS · ERP · payment gateway**
+
+### The challenges
+
+- **Heterogeneous** — DBs, APIs, files, logs; each speaks differently
+- **Don't overload the source** — it's **live**; use off-hours, throttle, a **replica**
+- **Read-only** — take a faithful copy, leave the source untouched
+
+### Full vs incremental extract
+
+- **Full** — the whole dataset each run; fine for small sources
+- **Incremental** — only what **changed** (timestamp / CDC); essential at scale
+
+### Preserve source fidelity
+
+- Land data **as-is** → **audit** + **reprocessing**
+- Cleaning & conforming come **later**, in transform
+`,
+  narration:
+    "Extract — pulling from source systems. The pipeline begins with extract: pulling data out of the source systems where the business actually runs. For Jabra, that's the web store, the point-of-sale system, the ERP, and the payment gateway — each a separate system, with its own format and schema. Extraction has three main challenges. First, the sources are heterogeneous — relational databases, application APIs, flat files, event logs, SaaS exports. Each one speaks differently, and extract has to handle each. Second, you must not overload the source. These are live operational systems; a heavy extract can slow the business down. So you pull during off-hours, you throttle, or you read from a replica rather than the primary. And third, extraction is read-only, with a minimal footprint — it never writes back to the source; it takes a faithful copy and leaves the system untouched. There are two modes of extraction, which mirror the load choice we'll see later. A full extract grabs the entire dataset every run — simple, and fine for small or slowly-changing sources. An incremental extract pulls only what changed since the last run, using a last-modified timestamp, or change data capture, which is section six. Incremental is essential for large, busy sources — you simply can't re-pull millions of orders every night. Finally, extract preserves source fidelity. It lands the data as-is — unchanged, uninterpreted — into the staging area, which is the next section. And keeping a faithful raw copy matters for two reasons: auditability, so you can prove what the source said; and reprocessing, so you can re-run transforms without hitting the source again. Cleaning and conforming come later, in transform. Extract's only job is to get the raw data out, safely and completely. So: extract pulls raw data from many heterogeneous source systems — read-only, low-impact, full or incremental — and lands it faithfully in staging, leaving interpretation for the transform stage.",
+}

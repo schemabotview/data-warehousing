@@ -1,0 +1,30 @@
+import type { Section } from '../types'
+
+export const etlVsElt: Section = {
+  id: 'etl-vs-elt',
+  title: 'ETL vs ELT',
+  scene: 'etl-vs-elt',
+  slide: `## ETL vs ELT
+
+The same three operations in two different orders — and the order you choose **is** the architecture, not a preference within it.
+
+### Same 3 operations — Extract · Transform · Load
+
+### ETL — transform **before** you land
+
+- Clean off to the side; warehouse sees only finished data
+- Suits **precious** warehouse compute
+
+### ELT — land first, transform **in place**
+
+- Raw lands first (audit, reprocessing) · transform = **in-warehouse SQL**
+- Rides **cheap, scalable** cloud/MPP compute (module 10)
+
+### Why it matters
+
+- Different order → different architecture
+- **ELT dominates the cloud** — push work to where the data sits
+`,
+  narration:
+    "E-T-L versus E-L-T. Modules three through eight designed the tables. This module answers the next question: how do they get filled? Data doesn't just appear in a warehouse — it's moved there from source systems by a data pipeline, built from three operations: Extract, Transform, and Load. And the order you run them in defines the two dominant architectures. Classic E-T-L is Extract, then Transform, then Load. Data is pulled from the sources, cleaned and conformed in a separate ETL engine, and only the finished result is loaded into the warehouse. It suits a world where warehouse compute is precious — you don't want to burn it on transformation, so a dedicated engine does the heavy lifting first. Modern E-L-T flips the last two: Extract, then Load, then Transform. Raw data is loaded first, and the transformation runs inside the warehouse, as SQL. And this works because the cloud warehouse is now the most powerful, most scalable compute you have — that's module ten — so you push the work to where the data already sits. Same letters, different order — why does it matter so much? With ETL, you transform off to the side; the warehouse only ever sees clean data; it's heavier tooling, but less load on the warehouse. With ELT, the raw data lands in the warehouse first — which is great for auditability and reprocessing; the transformation scales with cheap massively-parallel compute; and it's SQL-centric and tool-light. ELT dominates the cloud era. But the stages are the same either way. So the rest of this module walks each one — extract, staging, transform, load — and then the warehouse-specific concerns: change data capture, surrogate keys, load order, idempotency, and orchestration. So: ETL and ELT are the same three operations — extract, transform, load — in two orders. ETL transforms before loading, for precious warehouse compute; ELT loads raw and then transforms in-warehouse, on cheap scalable cloud compute — and it now dominates.",
+}

@@ -7,5 +7,6 @@
   "schemas": "Star & Snowflake Schemas",
   "history": "Slowly Changing Dimensions",
   "datavault": "Data Vault Modeling",
-  "design": "Designing a Data Warehouse Model"
+  "design": "Designing a Data Warehouse Model",
+  "loading": "ETL & ELT — Loading the Warehouse"
 }
