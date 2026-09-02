@@ -16,8 +16,14 @@ deployed by `deploy.yml` (Pages build source = the workflow; the apex domain is 
 
 **RECORDED 2026-09-02** — all six courses captured at 3840×2160 to `scripts/out/<course>.mp4`:
 101.8 min, 452 MB, h264/aac, 10 segments each. `scripts/out/` and `scripts/segments/` are gitignored,
-so the masters live only on this machine — back them up before cleaning. Remaining: thumbs (`npm run
-thumb`), descriptions (`npm run gen:desc`), upload.
+so the masters live only on this machine — back them up before cleaning.
+
+**PUBLISH ASSETS DONE 2026-09-02** — `npm run thumb` per course (6 × 1280×720 PNG, ~250 KB each) and
+`npm run gen:desc` (6 × .txt, ~1.6 KB, 10 chapters each; chapter sum 101:43 matches the masters). Both
+scripts were already DW-adapted: the thumbnail panel is the brand-blue gradient anchored on `--brand`
+`#5b8cff`, and `scripts/titles.json` holds the search-facing publish titles (`foundations` →
+"Warehouse Fundamentals") that the thumbnail header and the description headline share. Thumbs shoot
+section 0 of each course, which is the right lead frame for all six. Remaining: upload.
 
 ## What this is
 

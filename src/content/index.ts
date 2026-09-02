@@ -4,6 +4,7 @@ import { facts } from './facts'
 import { dimensions } from './dimensions'
 import { schemas } from './schemas'
 import { history } from './history'
+import { datavault } from './datavault'
 import type { Course, Section } from './types'
 
 // The course catalog, in syllabus order. → past a course's last section rolls into the next course's
@@ -19,6 +20,7 @@ export const COURSES: Record<string, Course> = {
   [dimensions.id]: dimensions,
   [schemas.id]: schemas,
   [history.id]: history,
+  [datavault.id]: datavault,
 }
 
 export type { Course, Section }

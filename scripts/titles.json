@@ -5,5 +5,6 @@
   "facts": "Fact Tables",
   "dimensions": "Dimension Tables",
   "schemas": "Star & Snowflake Schemas",
-  "history": "Slowly Changing Dimensions"
+  "history": "Slowly Changing Dimensions",
+  "datavault": "Data Vault Modeling"
 }
