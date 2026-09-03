@@ -6,24 +6,31 @@ Data-Warehousing-specific.
 
 ## Status
 
-**ALL 10 COURSES BUILT 2026-09-02** — 100 sections · 100 scenes · 100 wavs (171.1 min).
+**COMPLETE 2026-09-03** — 10 courses · 100 sections · 100 scenes · 100 wavs (171.1 min).
 `npm run build`, `tsc --noEmit` and `npm run check` are clean; `scripts/audio-manifest.json` is
-regenerated (60/60 have a wav). Slides model 767–1096 px against the 1100 ceiling (median 913).
+regenerated (100/100 sections have a wav). Slides model 767–1096 px against the 1100 ceiling.
 
 Live at **https://graphl.in/data-warehousing/** — pushed to `schemabotview/data-warehousing` and
 deployed by `deploy.yml` (Pages build source = the workflow; the apex domain is inherited from
 `schemabotview.github.io`'s CNAME, so no CNAME file here). Listed in the catalog's `concepts.json`.
 
-**RECORDED 2026-09-02** — all six courses captured at 3840×2160 to `scripts/out/<course>.mp4`:
-101.8 min, 452 MB, h264/aac, 10 segments each. `scripts/out/` and `scripts/segments/` are gitignored,
-so the masters live only on this machine — back them up before cleaning.
+**RECORDED** — all ten courses at 3840×2160 → `scripts/out/<course>.mp4`: **176.6 min, 791 MB**,
+h264/aac, ten segments each. Durations match narration + the 2.8 s bell per section; mean level
+−17.7 to −17.9 dB throughout, so the two capture batches cut together.
 
-**PUBLISH ASSETS DONE 2026-09-02** — `npm run thumb` per course (6 × 1280×720 PNG, ~250 KB each) and
-`npm run gen:desc` (6 × .txt, ~1.6 KB, 10 chapters each; chapter sum 101:43 matches the masters). Both
-scripts were already DW-adapted: the thumbnail panel is the brand-blue gradient anchored on `--brand`
-`#5b8cff`, and `scripts/titles.json` holds the search-facing publish titles (`foundations` →
-"Warehouse Fundamentals") that the thumbnail header and the description headline share. Thumbs shoot
-section 0 of each course, which is the right lead frame for all six. Remaining: upload.
+**PUBLISH ASSETS** — `scripts/out/<course>.png` (ten 1280×720 thumbnails on the brand-blue panel
+from `DEFAULT_PANEL_BG`, anchored on `--brand` `#5b8cff`) and `<course>.txt` (ten descriptions, 10
+chapters each). Chapter timings were cross-checked against the mp4s: every list starts at 0:00,
+ascends, and ends inside its video. `scripts/titles.json` holds the search-facing publish titles
+(`foundations` → "Warehouse Fundamentals") that the thumbnail header and description headline share.
+
+`scripts/out/` and `scripts/segments/` are gitignored, so **the entire publish set — 10 mp4 + 10 png
++ 10 txt — exists only on this machine. Back it up before anything cleans that directory.**
+Remaining: upload.
+
+Thumbnail note: `thumb.mjs <course> --section N` chooses WHICH scene is shot (0-based). A scene with
+a small bounding box renders biggest after fitView and so reads best at thumbnail size;
+`.tmp/thumbpick.ts` ranks every section of every course by that measure if a re-shoot wants one.
 
 ## What this is
 
