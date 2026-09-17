@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 strong vs weak — identity is the difference, so the two tables are drawn with their keys
 // showing: ORDER owns its id, ORDER_LINE has no key of its own and borrows its parent's. The band

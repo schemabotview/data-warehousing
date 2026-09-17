@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 what a dimension IS — the section's hook is that every report has the shape "measure BY
 // attribute", so the board puts a real report sentence at the top and shows which half comes from

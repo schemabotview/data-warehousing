@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 the control columns — §4 showed them in passing; this board is about the INVARIANT they encode
 // (a contiguous timeline, exactly one current row) and the two queries that invariant enables. The

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 the problem — the whole course exists because ONE question has two correct answers. So the
 // board poses it as a fork with both branches labelled right, which is the honest picture: this is a

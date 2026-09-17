@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 why the cloud — the on-prem appliance is the thing to picture first, because every cloud
 // property is an answer to one of its constraints. The closing card is the course's thesis: the

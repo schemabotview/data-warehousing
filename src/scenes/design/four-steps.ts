@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 the recipe — four steps laid out as one row, because the sequence is the content and a vertical
 // chain of four cards would render as a thin column. The band underneath is the part that actually

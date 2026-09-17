@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 Type 0 — the distinction that matters is against Type 1: overwrite ACCEPTS the update and
 // replaces, Type 0 REFUSES it. Drawing the incoming update being rejected is the difference; a card

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 schema-on-write vs schema-on-read — the whole section turns on WHEN one step happens, so the
 // scene is the same three steps in two orders, drawn as two lanes. Reading them against each other

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 marts — the claim is not "a mart is small", it is that the SAME slice can arrive two ways, and
 // only one of them is safe by construction. So the board is the two build paths racing to the same

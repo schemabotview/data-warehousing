@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 building the fact — the claim to make concrete is "one bill becomes TWO rows", so both rows are
 // drawn: same order_id, same customer and date repeated as FKs, different product_key. Seeing the

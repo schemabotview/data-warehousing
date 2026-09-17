@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 caching and MVs — one idea in two strengths, so the board ranks them by what they avoid: an MV
 // avoids recomputing the aggregate, and the result cache avoids running anything at all. The tie

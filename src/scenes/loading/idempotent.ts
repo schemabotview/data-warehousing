@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 idempotence — the section the whole course has been pointing at since module 06's merge. The
 // framing that makes it stick: pipelines fail, so the only question is what a RE-RUN does. Each

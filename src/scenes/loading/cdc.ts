@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 CDC — four methods that form a real ladder, so they are ordered weakest to strongest with the
 // specific weakness attached to each. "Misses deletes" is the one worth burning into memory: the

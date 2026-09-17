@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 grain — the section calls this the most important decision, so the scene is the decision
 // itself: three candidate grains for the same sales data, and what each one can still answer. The

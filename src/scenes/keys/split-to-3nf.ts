@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 the worked example — the before/after IS the lesson, so both states are real tables: the flat
 // one with city repeated, and the two it splits into. The edge carries the diagnosis (city depends

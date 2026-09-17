@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 the three building blocks — the core board of the course, and the one that has to be a real
 // GRAPH: hubs anchored, links between them, satellites hanging off both. Everything in §3-§6 is a

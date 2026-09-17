@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 extract — the governing constraint is that the source is LIVE and belongs to someone else, so
 // the board leads with the four real sources and then the three rules that follow from not being

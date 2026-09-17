@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 MPP — the arithmetic IS the explanation, so the board carries it: a billion rows across a
 // hundred nodes is ten million each. The last band is the honest limit — this design is superb for

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 step four — two tests, and the second is the one people skip: a shipping charge is numeric and
 // aggregatable and STILL wrong here, because it lives at the order header and would double-count

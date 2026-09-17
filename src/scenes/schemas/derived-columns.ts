@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 the fact's other columns — two things that are neither key nor plain measure. The store-vs-
 // compute decision is the section's real content, so it gets a table of consequences, and the

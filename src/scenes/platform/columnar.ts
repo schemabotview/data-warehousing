@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 columnar — the layout has to be SEEN, so both are drawn as real rows. Everything else follows
 // visually: if a column is contiguous you can read one and skip twenty, and values of one type

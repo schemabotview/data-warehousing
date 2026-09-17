@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 the modeling journey — a descent from business language to DDL, so the scene is three stacked
 // levels with the SAME idea restated at each one (a customer buys a product → tables and keys →

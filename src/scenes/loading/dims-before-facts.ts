@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 ordering — a hard rule with a mechanical reason (the surrogate does not exist until the dim row
 // does), so the board shows both orders and what each produces. The early-arriving-fact case is the

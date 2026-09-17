@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 the four key terms — they are NESTED, not parallel, and that nesting is the whole lesson. So a
 // real STUDENT table supplies the candidates, and the chain underneath walks the narrowing: any

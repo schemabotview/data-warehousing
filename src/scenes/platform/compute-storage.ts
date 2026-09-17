@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 separation — the before/after is structural: in the coupled design a resize MOVES DATA, and in
 // the decoupled one it does not. Everything else on the board (concurrent clusters, separate

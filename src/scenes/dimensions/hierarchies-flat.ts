@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 attributes & hierarchies — a hierarchy is a natural roll-up PATH, so the three real paths are
 // drawn as chains. The teaching point is the last band: the path is real, but it is stored FLAT, as

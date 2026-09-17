@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 the load — the course ends on the mechanism, so this is a decision procedure: match on the
 // natural key, then one of four outcomes. The hash comparison and the idempotence requirement are

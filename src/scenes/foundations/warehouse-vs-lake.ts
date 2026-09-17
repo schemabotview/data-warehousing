@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 warehouse vs lake — a four-axis comparison again, but deliberately NOT a table: §3 already
 // spent the table on OLTP/OLAP, and the teaching point here is that the two stores sit at opposite

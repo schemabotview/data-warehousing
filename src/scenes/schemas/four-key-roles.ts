@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 the four key roles — students confuse PK and SK because in a dimension they are the SAME
 // COLUMN wearing two hats, so the dimension table here is drawn with that column tagged once and

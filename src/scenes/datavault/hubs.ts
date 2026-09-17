@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 hubs — the striking thing about a hub is what is NOT in it, so the table is drawn in full and
 // it is four columns, none of them descriptive. The lower half is the job that shape enables: three

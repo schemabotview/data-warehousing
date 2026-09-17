@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 degenerate dimensions — the teaching move is to build the DIM_ORDER that ISN'T there and show
 // it empty: every attribute an order header would carry has already gone to another dimension, so

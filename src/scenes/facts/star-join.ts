@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 the star centre — the fact's FKs are the rays, so the scene is the star itself, and the code
 // card is the query shape that falls out of it. Pairing the two is the point: every BI query takes

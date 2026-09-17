@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { toTheCloud } from './to-the-cloud'
 import { mpp } from './mpp'
 import { computeStorage } from './compute-storage'

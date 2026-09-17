@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 why flat wins — the argument is a COUNT of hops, so both versions of "sales by region" are
 // drawn: four chained tables against one flat one. The safety argument closes it, because the

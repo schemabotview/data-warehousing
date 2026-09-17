@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { etlVsElt } from './etl-vs-elt'
 import { extract } from './extract'
 import { staging } from './staging'

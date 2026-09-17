@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 building the dimensions — the moment the surrogate key stops being theory: the bill knows only
 // C-4471, and the dimension mints 1101. Drawing that substitution is the point, because everything

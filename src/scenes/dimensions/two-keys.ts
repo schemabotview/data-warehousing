@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 surrogate keys in dimensions — the payoff is history, so the board ends on Ana moving city:
 // two rows, one customer_id, two customer_keys. Drawing the two rows is what makes "the fact points

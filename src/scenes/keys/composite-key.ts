@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 composite keys — "unique only in COMBINATION" has to be seen: neither order_id nor line_no is
 // unique down its own column, and the pair is. The three places composites appear are listed below,

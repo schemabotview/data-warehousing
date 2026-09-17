@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 vault vs dimensional — seven axes of contrast, which is a table's job, but the resolution is
 // the point: they are not rivals to choose between, they are LAYERS. The stack underneath is the

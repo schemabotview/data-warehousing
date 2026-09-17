@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 links — again defined by an absence: no attributes, no measures, only the hubs it ties. The
 // golden rule (model M:N even when today it is 1:N) is the section's real content, because it is

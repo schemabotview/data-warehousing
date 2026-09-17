@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 hash keys — the mechanism behind the "parallel loading" claim made back in §1, so the board has
 // to make the causal link explicit: deterministic hash → no lookup → no ordering dependency between

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 junk dimensions — the before/after is the argument: four flag columns smeared across a huge
 // fact, versus one junk_key pointing at a tiny table of the combinations that actually occur. The

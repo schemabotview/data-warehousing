@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 the physical walkthrough — the first board in the course to show REAL COLUMNS, which is what
 // makes it different from §1's shape and §2's anatomy. FACT_SALES is drawn as a schema table so the

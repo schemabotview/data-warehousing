@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 why we split — the argument is empirical, so show the actual rows. One wide table with
 // "Ann · Delhi" repeated is the evidence; the three anomalies below are what that repetition costs.

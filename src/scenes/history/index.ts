@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { theDriftQuestion } from './the-drift-question'
 import { type0 } from './type-0'
 import { type1 } from './type-1'

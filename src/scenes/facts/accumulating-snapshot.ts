@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 accumulating snapshots — the only fact type whose rows are UPDATED, so the scene shows one row
 // at two moments: born with NULL milestones, then filled in as the pipeline advances. The NULLs are

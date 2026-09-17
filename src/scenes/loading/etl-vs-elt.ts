@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 ETL vs ELT — the same three operations in two orders, so the board is the two orders stacked
 // and the difference is visible as WHERE the transform box sits relative to the warehouse. The

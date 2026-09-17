@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 the choice — the section's real claim is that SCD is picked PER COLUMN, so the board shows one
 // DIM_CUSTOMER with six columns each carrying a different policy. Seeing six types coexist in one

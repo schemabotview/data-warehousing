@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 aggregates — a derived COPY, and the danger is exactly that word. So the board runs atomic →
 // rolled-up and then lands on the duty: the copy is only ever as true as its last refresh, and the

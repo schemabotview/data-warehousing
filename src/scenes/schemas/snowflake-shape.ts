@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 the snowflake — literally §3 run backwards, so the chain reappears, this time as the SCHEMA
 // rather than as the thing being avoided. The outrigger is drawn separately because it is the one

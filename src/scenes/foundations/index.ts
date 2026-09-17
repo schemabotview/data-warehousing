@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { twoQuestions } from './two-questions'
 import { fourTraits } from './four-traits'
 import { oltpVsOlap } from './oltp-vs-olap'

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 Type 2 — the most important board in the course. The two dimension rows and the two fact rows
 // must be on screen TOGETHER, because the claim is that a sale's date decides which surrogate key it

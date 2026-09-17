@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 satellites — the payoff is that SCD-2 comes free, so Ana's move is drawn as two real rows with
 // the same parent hash and two load_dates. This is deliberately the same incident module 06 spent

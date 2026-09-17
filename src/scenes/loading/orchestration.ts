@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 orchestration + data quality — the course closes on the two things that make a pipeline
 // trustworthy rather than merely working. The DAG restates §8's ordering as an operational fact, and

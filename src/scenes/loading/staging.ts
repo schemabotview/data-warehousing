@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 staging — a landing zone is easy to dismiss as a temp table, so the board is built entirely
 // around the four jobs it does. The restart-checkpoint one is the load-bearing claim, because it is

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 natural vs surrogate — one incident decides it: Anita changes her email. Both outcomes are
 // drawn as real rows, because "one customer" vs "two customers" is a fact about the data, not an

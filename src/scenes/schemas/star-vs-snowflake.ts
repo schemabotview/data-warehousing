@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 the trade-off — seven axes that all move together when you turn ONE dial (how normalized the
 // dimensions are), which is why the table is the right form and why the dial is drawn above it. The

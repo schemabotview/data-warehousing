@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 transform — five operations, and the section's real claim is that data quality is won or lost
 // HERE. Conform gets the concrete example ('M' / 'Male' / '1' → Male) because it is the one that

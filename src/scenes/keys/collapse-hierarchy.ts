@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 denormalization — the warehouse deliberately UNDOES §3. Showing the three normalized product
 // tables collapsing into one flat dimension row makes the trade concrete: three joins become none.

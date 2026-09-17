@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { sliceBy } from './slice-by'
 import { hierarchiesFlat } from './hierarchies-flat'
 import { twoKeys } from './two-keys'

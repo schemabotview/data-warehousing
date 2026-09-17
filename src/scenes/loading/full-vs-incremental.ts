@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 full vs incremental — a sizing decision, so the board pairs each strategy with what it is FOR
 // rather than listing pros and cons in the abstract. The high-water mark gets its own card because

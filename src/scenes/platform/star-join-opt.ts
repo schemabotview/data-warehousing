@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 star-join optimisation — the payoff board for the whole course: the engine filters the huge
 // fact BY the tiny dimension instead of the other way round. The three numbered steps are the

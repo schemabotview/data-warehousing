@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 fact vs dimension — six axes of contrast, which is a table's job. The board then lands on the
 // one-question test, and on the case that proves the test is about ROLE and not data type: the same

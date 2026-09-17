@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 what it IS — Inmon's four traits are a DEFINITION, so the scene is the definition itself: one
 // warehouse box holding the four properties as tiles. Each tile carries the consequence, not just

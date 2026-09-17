@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 step two — the section says "say it as a sentence", so the board shows the sentence and the two
 // wrong sentences beside it, since the error is always a grain that is too COARSE. The lower half is

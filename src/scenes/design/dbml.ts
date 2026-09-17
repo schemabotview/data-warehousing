@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 DBML — the course ends by writing the model down, so the board is the notation itself and then
 // how to read it. The argument for text over a drawing tool is the one that matters to an engineer:

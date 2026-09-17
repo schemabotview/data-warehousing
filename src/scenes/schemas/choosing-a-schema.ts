@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 the decision — the course closes on a default and its exceptions, which is a decision tree,
 // not a list. Snowflaking is drawn as a scalpel applied to ONE dimension rather than a whole-schema

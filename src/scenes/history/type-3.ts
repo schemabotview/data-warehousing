@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 Type 3 — history in a COLUMN rather than a row, which sounds like a weaker Type 2 until you
 // see its actual use: reporting the same facts under an old and a new grouping at once, after a

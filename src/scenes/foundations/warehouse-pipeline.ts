@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 components — the one genuine SYSTEM MAP of the course: sources → ETL → storage → marts → BI,
 // left to right, with metadata underneath as the strip that makes the whole thing governable. Every

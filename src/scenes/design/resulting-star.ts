@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 the result — the four steps map one-for-one onto the four parts of the star, and that mapping
 // is the course's whole argument in one board. The query is what PROVES it: a business question the

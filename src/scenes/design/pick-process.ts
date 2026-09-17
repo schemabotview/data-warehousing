@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 step one — the useful teaching here is the NEGATIVE space: beginners pick a department or a
 // dashboard, so the board puts the three common wrong answers beside the right one. The choice rule

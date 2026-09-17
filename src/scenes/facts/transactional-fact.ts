@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 transactional facts — the default type, and its defining property is what does NOT happen: no
 // row is ever updated. Drawing the 1:1 correspondence with source events (240 orders, 240 rows) is

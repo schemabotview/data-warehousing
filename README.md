@@ -40,7 +40,6 @@ stay module N; never renumber or reorder. See [`CLAUDE.md`](./CLAUDE.md) for the
 ## Layout
 
 ```
-src/render-engine/   layout + react-flow / code-snippet renderer (import from the barrel index)
 src/scenes/          hand-authored scenes + registry, one folder per course
 src/content/         courses → sections (one file per section) + registry
 src/section/         composited scene-left / slide-right view (responsive)

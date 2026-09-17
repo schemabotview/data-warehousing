@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 what a fact table IS — every column is one of exactly two things, and seeing real FACT_SALES
 // rows with the keys and the measures side by side makes that division obvious in a way a definition

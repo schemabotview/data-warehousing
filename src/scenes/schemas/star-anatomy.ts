@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 anatomy — the centre and the points are opposite in every dimension of shape, and the join
 // arithmetic at the end (N+1 tables, at most N joins, never a join BETWEEN dimensions) is the

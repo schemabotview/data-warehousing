@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 the star — this board is deliberately the SHAPE and nothing else: one fact, a ring of
 // dimensions, every one exactly one hop away. §2 dissects the parts and §7 shows the real columns,

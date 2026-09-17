@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 Type 1 — the mechanics are trivial (an UPSERT) and the CONSEQUENCE is the lesson: Ana's past
 // sales silently move to Barcelona. So the board spends its space on the fact rows re-rolling up,

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 foreign keys — a claim about a POINTER BETWEEN TABLES, so both tables are real and the edge is
 // the FK itself. (Edges anchor to the node, never to a row, so the referenced columns are named in

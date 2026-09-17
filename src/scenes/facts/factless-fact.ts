@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 factless facts — a fact table with no measures sounds like a contradiction, so the scene shows
 // the two genuinely different jobs it does. The second one is the interesting one: coverage records

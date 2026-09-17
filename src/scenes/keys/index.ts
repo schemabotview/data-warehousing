@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { redundancyAnomalies } from './redundancy-anomalies'
 import { normalFormsLadder } from './normal-forms-ladder'
 import { splitTo3nf } from './split-to-3nf'

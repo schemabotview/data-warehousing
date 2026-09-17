@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 why — the claim is that a business asks TWO kinds of question, and one machine cannot be good
 // at both. So the scene is the two questions side by side with the system each one needs, and the

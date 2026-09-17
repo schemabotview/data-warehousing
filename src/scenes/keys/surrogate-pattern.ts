@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 why warehouses insist — five reasons is a list, and a list of five cards teaches nothing on
 // its own, so the board ENDS on the pattern the reasons produce: a surrogate-keyed dimension joined

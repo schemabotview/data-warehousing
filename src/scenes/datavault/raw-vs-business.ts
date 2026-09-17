@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 raw vs business vault — one question splits them ("has a business rule been applied?"), and the
 // consequence is the part worth drawing: because rules live in a separate layer, changing a rule

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §2 the normal forms — a LADDER, because each form assumes the one below it. Each rung carries the
 // single rule it adds rather than a restatement of the form's name. The two dependency kinds sit

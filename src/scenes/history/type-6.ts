@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 Type 6 — the whole point is two columns holding different truths in the SAME row, so the rows
 // must be on screen: historical_region frozen per version, current_region swept across every row.

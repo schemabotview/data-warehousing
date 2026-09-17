@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 the date dimension — the argument to win is "why a table instead of MONTH()", and it is won by
 // showing the columns a date FUNCTION cannot give you: is_holiday, fiscal_year, is_weekend. The row

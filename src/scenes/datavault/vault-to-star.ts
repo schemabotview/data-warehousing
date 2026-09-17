@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 the information mart — the claim is that the mapping is MECHANICAL, so the board is the mapping
 // itself, table-shaped. It is also the moment this course reconnects to the previous five: the thing

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §1 why it exists — the argument only lands if you first grant that the star is GOOD. So the board
 // states the star's strength and its one weakness (change costs a re-engineer), then the vault's

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 additivity — a property of a MEASURE against the dimensions you sum it over, so each of the
 // three classes carries the operation that is legal for it. The trap is the middle one: a balance

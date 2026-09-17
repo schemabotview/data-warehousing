@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 the same degenerate dimension, from the OTHER side — the narration explicitly calls back to
 // module 03, so this board is deliberately not a re-run of that one. There it was a column on the

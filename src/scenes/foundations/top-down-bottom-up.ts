@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §9 Inmon vs Kimball — the disagreement is about WHERE YOU START, so the two lanes run the same
 // three boxes in opposite directions. Each lane ends on its own risk, and the band underneath is the

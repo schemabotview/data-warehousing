@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { starShape } from './star-shape'
 import { starAnatomy } from './star-anatomy'
 import { flatWins } from './flat-wins'

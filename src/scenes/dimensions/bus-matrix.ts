@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 conformed dimensions — the claim is that sharing ONE dimension is what turns separate marts
 // into a warehouse, so three facts are drawn pointing at the same DIM_CUSTOMER. The bus matrix

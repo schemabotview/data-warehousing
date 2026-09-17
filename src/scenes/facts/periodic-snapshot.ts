@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 periodic snapshots — a row appears whether or not anything happened, which is exactly what a
 // transactional fact will not do. The daily rows make "stock on 1-Feb is one lookup, not a re-sum"

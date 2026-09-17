@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 the galaxy — the real-world shape, and the reason it works is the conformed dimension from
 // module 04, so the three facts genuinely share the three dimension boxes rather than each owning a

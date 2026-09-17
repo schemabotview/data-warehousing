@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 zone maps — the mechanism is min/max metadata per block, and it only pays if related values sit
 // TOGETHER, which is the entire reason clustering exists. Drawing three blocks with their ranges and

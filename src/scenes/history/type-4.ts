@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 Type 4 — two genuinely different techniques share one number, so the board is split in two and
 // labelled A and B. The mini-dimension is the subtle one: the fact gains a SECOND key, and a change

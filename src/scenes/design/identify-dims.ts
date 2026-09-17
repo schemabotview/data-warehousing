@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 step three — the method is five plain questions, so the board IS the five questions with their
 // answers, which is more useful than a list of dimension names. The habits band is the part that

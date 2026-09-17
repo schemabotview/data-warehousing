@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §8 the lakehouse — the claim is architectural: warehouse management placed ON lake storage, so the
 // picture must be a STACK, not a comparison. Read bottom-up: cheap object storage, open columnar

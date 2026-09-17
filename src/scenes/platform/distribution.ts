@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 distribution vs partitioning — two different questions that beginners fuse: WHICH NODE, and
 // WHICH SEGMENT. So the board answers them separately and gives each its payoff — a co-located join

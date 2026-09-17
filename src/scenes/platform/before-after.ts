@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 the finale of the whole concept. The before/after is one code card because the two queries
 // must be read against each other — same result, and the only differences are naming the columns and

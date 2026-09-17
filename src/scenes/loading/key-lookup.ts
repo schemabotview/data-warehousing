@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §7 the surrogate-key lookup — module 08 named this step in passing; here it is the whole board.
 // The two halves are generation (the dimension mints) and lookup (the fact resolves), and the third

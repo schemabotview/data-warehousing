@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { whyVault } from './why-vault'
 import { threeBlocks } from './three-blocks'
 import { hubs } from './hubs'

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §4 the platforms — four products is a table, not four cards, and the useful reading is DOWN the
 // last column: they differ mainly in how much tuning they expect from you. That axis is what the

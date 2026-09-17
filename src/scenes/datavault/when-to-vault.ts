@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 when to reach for it — a decision board, and the honest half is the right-hand side. A course
 // that only argues FOR its subject teaches a learner to over-apply it, and Data Vault over-applied

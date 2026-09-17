@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §3 the two workloads — this section's claim IS a comparison across four axes, and a comparison is
 // what a table renders better than any arrangement of cards. So the board is one real table node

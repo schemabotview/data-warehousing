@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §6 the worked example — the centrepiece of the course. The bill is drawn as the real document,
 // because the whole method reduces to one pass over it tagging each field A or M, and that pass IS

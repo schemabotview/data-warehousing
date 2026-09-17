@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §5 role-playing — the mistake this section prevents is building three date tables, so the board
 // shows three fact columns converging on ONE DIM_DATE, and the code card shows the aliasing that

@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 
 // §10 pitfalls — a list of seven traps is the least interesting possible board, so the through-line
 // carries it: nearly all of them are the same mistake (the dimension treated as an afterthought),

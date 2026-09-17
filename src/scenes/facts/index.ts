@@ -1,4 +1,4 @@
-import type { Scene } from '../../render-engine'
+import type { Scene } from '@graphlearning/flow'
 import { factAnatomy } from './fact-anatomy'
 import { grainRuler } from './grain-ruler'
 import { additivity } from './additivity'
